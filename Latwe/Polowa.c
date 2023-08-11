@@ -26,7 +26,7 @@ int main() {
 		scanf("%s", str);
 		char* s = CutHalf(str);
 		printf("%s\n", s);
-    free(s);
+    		free(s);
 	}
 
 	return 0;
