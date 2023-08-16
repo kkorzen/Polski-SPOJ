@@ -23,6 +23,12 @@ int** Matrix_Transpose(int** arr, int rows, int cols) {
 	
 	return temp;
 }
+
+void free2D(int** x, int rows){
+ for(int i=0;i<rows;i++)
+  free(x[i]);
+ free(x);
+}
  
 int main() {
 	
@@ -49,8 +55,8 @@ int main() {
 		puts("");
 	}
  
-	free(arr);
-	free(t);
+	free2D(arr);
+	free2D(t);
  
 	return 0;
 } 
