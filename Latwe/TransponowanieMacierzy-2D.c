@@ -25,9 +25,9 @@ int** Matrix_Transpose(int** arr, int rows, int cols) {
 }
 
 void free2D(int** x, int rows){
- for(int i=0;i<rows;i++)
-  free(x[i]);
- free(x);
+    for(int i=0;i<rows;i++)
+        free(x[i]);
+    free(x);
 }
  
 int main() {
