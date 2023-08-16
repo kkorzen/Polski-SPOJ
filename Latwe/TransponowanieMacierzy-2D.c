@@ -55,8 +55,8 @@ int main() {
 		puts("");
 	}
  
-	free2D(arr);
-	free2D(t);
+	free2D(arr, rows);
+	free2D(t, cols);
  
 	return 0;
 } 
