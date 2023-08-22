@@ -7,7 +7,7 @@
 
 int Calc(int _a, int _b) {
 	int a = _a, b = _b;
-	bool player = false;	// true -> first ; false -> second
+	bool player = false;	// true -> pierwszy ; false -> drugi
 
 	while ((a != b) && (a > 0) && (b > 0)) {
 		player = (a < b) ? true : false;
