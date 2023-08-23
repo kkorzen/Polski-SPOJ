@@ -42,7 +42,7 @@ int BinToDec(int _n) {
 	int result = 0;
 
 	for (int i = 0;i < len;i++) {
-    if (str[i] != '0' && str[i] != '1') return -1;
+    		if (str[i] != '0' && str[i] != '1') return -1;
 		result += CharToInt(str[i]) * pow(2, i);
 	}
 	return result;
