@@ -14,6 +14,9 @@ double log_b(int n, int base) {
 }
 
 char* Convert(int n, int base) {
+	if (base <= 1 || n < 0) 
+		return "Error!";
+	
 	int reminder = 0;
 	int len = log_b(n, base) + 1;
 	char* s = calloc(len+1, sizeof(char));
