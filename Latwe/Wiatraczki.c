@@ -38,7 +38,7 @@ void GenerateRightTurnWindmill(char** windmill, int r) {
 
 void GenerateLeftTurnWindmill(char** windmill, int r) {
     GenerateRightTurnWindmill(windmill, r);
-    // moÅ¼na po prostu uzyc fukcji strrev() ze <stirng.h>
+    // mozna po prostu uzyc fukcji strrev() ze <stirng.h>
     // ale spoj nie rozpoznaje tej funkcji
 
     /*
