@@ -1,4 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	PP0601A2
+	Link:			https://pl.spoj.com/problems/PP0601A2/
+*/
 
 #include <stdio.h>
 
@@ -15,6 +18,6 @@ int main() {
 		prev_num = num;
 		i++;
 	}
-	
+
 	return 0;
 }

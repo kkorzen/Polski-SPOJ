@@ -1,14 +1,17 @@
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+    Kod zadania:    JSPACE
+    Link:           https://pl.spoj.com/problems/JSPACE/
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
- 
+
 int main()
 {
     char str[200];
- 
-    while (fgets(str,200,stdin))
+
+    while (fgets(str, 200, stdin))
     {
         int len = strlen(str);
         for (unsigned int i = 0; i < len; i++)
@@ -28,6 +31,6 @@ int main()
         }
         puts("");
     }
- 
+
     return 0;
 }

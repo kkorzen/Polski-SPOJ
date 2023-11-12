@@ -1,11 +1,12 @@
 /*
+	Kod zadania:	TRN
+	Link:			https://pl.spoj.com/problems/TRN/
+*/
+
+/*
 [PL]
 Transpozycja macierzy z wykorzystaniem tablicy JEDNOWYMIAROWEJ alokowanej dynamiczne.
 W celu zwolnienia pamieci wystarczy uzyc wbudowanej funkcji free().
-
-[ENG]
-Matrix transpose using one dimensional array, which is allocated dynamically.
-To free occupied memory only built-in free() function is needed.
 */
 
 #define _CRT_SECURE_NO_WARNINGS

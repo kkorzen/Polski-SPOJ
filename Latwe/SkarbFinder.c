@@ -1,5 +1,7 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	SKARBFI
+	Link:			https://pl.spoj.com/problems/SKARBFI/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,9 +41,9 @@ int main() {
 	*/
 
 	scanf("%d", &D);
-	for (int i = 0;i < D;i++) {
+	for (int i = 0; i < D; i++) {
 		scanf("%d", &N);
-		for (int j = 0;j < N;j++) {
+		for (int j = 0; j < N; j++) {
 			scanf("%d %d", &a, &b);
 			switch (a) {
 			case 0: pos.y += b; break;

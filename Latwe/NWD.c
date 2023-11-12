@@ -1,8 +1,10 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	PP0501A
+	Link:			https://pl.spoj.com/problems/PP0501A/
+*/
+
 #include <stdio.h>
- 
+
 // Algorytm Euklidesa
 int nwd(int _a, int _b) {
 	int a = _a, b = _b, r;
@@ -15,18 +17,18 @@ int nwd(int _a, int _b) {
 		}
 	}
 }
- 
+
 int main() {
- 
+
 	int t, a, b;
- 
+
 	scanf("%d", &t);
- 
-	for (int i = 0;i < t;i++) {
+
+	for (int i = 0; i < t; i++) {
 		scanf("%d %d", &a, &b);
 		printf("%d\n\n", nwd(a, b));
 	}
- 
+
 	return 0;
 }
- 
+

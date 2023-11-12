@@ -1,5 +1,7 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	MWPZ06H
+	Link:			https://pl.spoj.com/problems/MWPZ06H/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>

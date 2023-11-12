@@ -1,8 +1,10 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania: 	FCTRL3
+	Link:			https://pl.spoj.com/problems/FCTRL3/
+*/
+
 #include <stdio.h>
- 
+
 void Factorial_Last_Two_Digits(int n, unsigned char* res) {
 	char cd = 0, cj = 0;
 	switch (n) {
@@ -21,18 +23,18 @@ void Factorial_Last_Two_Digits(int n, unsigned char* res) {
 	*res = cj;
 	*(res + 1) = cd;
 }
- 
+
 int main() {
- 
+
 	int D, n;
 	unsigned char r[2];
 	scanf("%d", &D);
- 
+
 	for (int i = 0; i < D; i++) {
 		scanf("%d", &n);
 		Factorial_Last_Two_Digits(n, r);
 		printf("%d %d\n", *(r + 1), *(r));
 	}
- 
+
 	return 0;
 }

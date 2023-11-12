@@ -1,8 +1,11 @@
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	CALC
+	Link:			https://pl.spoj.com/problems/CALC/
+*/
+
 #include <stdio.h>
 #include <ctype.h>
- 
+
 int Calc(char op, int a, int b) {
 	switch (op) {
 	case '+':
@@ -19,15 +22,15 @@ int Calc(char op, int a, int b) {
 		return 0;
 	}
 }
- 
- 
+
+
 int main() {
 	char op;
 	int a, b;
-	
-	while (scanf(" %c %d %d", &op, &a, &b)==3) {
+
+	while (scanf(" %c %d %d", &op, &a, &b) == 3) {
 		printf("%d\n", Calc(op, a, b));
 	}
- 
+
 	return 0;
-} 
+}

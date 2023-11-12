@@ -1,7 +1,10 @@
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	MWPZ06X
+	Link:			https://pl.spoj.com/problems/MWPZ06X/
+*/
+
 #include <stdio.h>
- 
+
 int main() {
 	int D, X;
 	scanf("%d", &D);
@@ -9,6 +12,6 @@ int main() {
 		scanf("%d", &X);
 		printf("%d\n", X * X);
 	}
- 
+
 	return 0;
-} 
+}

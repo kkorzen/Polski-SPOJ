@@ -1,4 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	MWPZ06A
+	Link:			https://pl.spoj.com/problems/MWPZ06A/
+*/
 
 #include <stdio.h>
 #include <math.h>

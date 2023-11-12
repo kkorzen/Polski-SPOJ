@@ -1,12 +1,14 @@
-// Dyrektywa dla poprawnego dzialnia funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	FLAMASTE
+	Link:			https://pl.spoj.com/problems/FLAMASTE/
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
- 
+
 void modify(char* str) {
 	int len = strlen(str);
 	int cnt = 1;
@@ -23,18 +25,18 @@ void modify(char* str) {
 			cnt++;
 	}
 }
- 
+
 int main() {
 	int C = 0;
 	scanf("%d", &C);
- 
+
 	char str[201];
- 
+
 	for (int i = 0; i < C; i++) {
 		scanf("%s", str);
 		modify(str);
 		puts("");
 	}
- 
+
 	return 0;
-} 
+}

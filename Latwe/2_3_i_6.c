@@ -1,4 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	WWO_01_07
+	Link:			https://pl.spoj.com/problems/WWO_01_07/
+*/
 
 #include <stdio.h>
 
@@ -12,7 +15,7 @@ char* Func(int n) {
 int main() {
 	int x, y;
 	scanf("%d %d", &x, &y);
-	for (int i = x;i <= y;i++) {
+	for (int i = x; i <= y; i++) {
 		printf("%s", Func(i));
 	}
 	return 0;

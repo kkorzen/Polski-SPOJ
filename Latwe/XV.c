@@ -1,4 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	WZP09_2F
+	Link:			https://pl.spoj.com/problems/WZP09_2F/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +11,7 @@
 bool Check_3(char* num) {
 	int len = strlen(num);
 	int sum = 0;
-	for (int i = 0;i < len;i++) {
+	for (int i = 0; i < len; i++) {
 		sum += (int)num[i] - 48;
 	}
 	if (sum % 3 == 0) return true;
@@ -24,7 +27,7 @@ bool Check_5(char* num) {
 
 /*
 Wykorzystane zmienne znakowe char do przechowywania liczb ze wzgledu na wymogi zadania,
-ktore zaklada maksymalna dlugosc liczby rowna 1000 cyfr. Taka liczba nie zmiesci sie 
+ktore zaklada maksymalna dlugosc liczby rowna 1000 cyfr. Taka liczba nie zmiesci sie
 w zdanym typie danych liczbowym, dlatego nalezy wykorzystac tablice znakow i analizowac
 ciag znak po znaku korzystajac z zasad podzielnosci.
 */

@@ -1,4 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	MWPZ06D
+	Link:			https://pl.spoj.com/problems/MWPZ06D/
+*/
 
 #include <stdio.h>
 

@@ -1,3 +1,8 @@
+/*
+    Kod zadania:    FANGEN
+    Link:           https://pl.spoj.com/problems/FANGEN/
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

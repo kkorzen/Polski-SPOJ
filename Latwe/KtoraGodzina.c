@@ -1,5 +1,7 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	WWO_01_05
+	Link:			https://pl.spoj.com/problems/WWO_01_05/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,8 +30,8 @@ char* ReverseStr(char* str) {
 
 char* IntToCharArray(int _n) {
 	char digits = CountDigits(_n);
-	char* str = calloc(digits+1, sizeof(char));
-	for (int i = digits-1;i >=0;i--) {
+	char* str = calloc(digits + 1, sizeof(char));
+	for (int i = digits - 1; i >= 0; i--) {
 		str[i] = _n % 10 + 48;
 		_n /= 10;
 	}
@@ -41,8 +43,8 @@ int BinToDec(int _n) {
 	int len = strlen(str);
 	int result = 0;
 
-	for (int i = 0;i < len;i++) {
-    		if (str[i] != '0' && str[i] != '1') return -1;
+	for (int i = 0; i < len; i++) {
+		if (str[i] != '0' && str[i] != '1') return -1;
 		result += CharToInt(str[i]) * pow(2, i);
 	}
 	return result;

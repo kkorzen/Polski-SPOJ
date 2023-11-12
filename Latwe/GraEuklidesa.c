@@ -1,5 +1,7 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	EUCGAME
+	Link:			https://pl.spoj.com/problems/EUCGAME/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +27,7 @@ int main() {
 	int a, b, t;
 
 	scanf("%d", &t);
-	for (int i = 0;i < t;i++) {
+	for (int i = 0; i < t; i++) {
 		scanf("%d %d", &a, &b);
 		printf("%d\n", Calc(a, b));
 	}

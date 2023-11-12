@@ -1,10 +1,13 @@
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	JZAPKAB
+	Link:			https://pl.spoj.com/problems/JZAPKAB/
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
- 
+
 int Kabal(char c) {
 	switch (tolower(c)) {
 	case 'a': return 1; break;
@@ -36,18 +39,18 @@ int Kabal(char c) {
 	default: return 0;
 	}
 }
- 
+
 int main() {
 	char str[26];
 	int sum = 0;
- 
+
 	scanf("%s", str);
 	int len = strlen(str);
-	
-	for (int i = 0;i < len;i++) {
+
+	for (int i = 0; i < len; i++) {
 		sum += Kabal(str[i]);
 	}
 	printf("%d", sum);
- 
+
 	return 0;
-} 
+}

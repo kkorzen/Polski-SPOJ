@@ -1,3 +1,8 @@
+/*
+    Kod zadania:    SIGALRM
+    Link:           https://pl.spoj.com/problems/SIGALRM/
+*/
+
 #include <signal.h>
 #include <stdio.h>
 #include <stdbool.h>

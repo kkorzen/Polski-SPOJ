@@ -1,20 +1,22 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	JHTMLLET
+	Link:			https://pl.spoj.com/problems/JHTMLLET/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
 
-int main(){
+int main() {
 
 	char str[200];
 	_Bool bracket = 0; // 0 - closed | 1 - opened
 
 	while (fgets(str, 200, stdin)) {
 		int len = strlen(str);
-		
-		for (int i = 0;i < len;i++) {
+
+		for (int i = 0; i < len; i++) {
 			if (str[i] == '<') {
 				bracket = 1;
 			}

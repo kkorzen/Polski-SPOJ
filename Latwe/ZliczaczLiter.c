@@ -1,14 +1,17 @@
-#define _CRT_SECURE_NO_WARNINGS
- 
+/*
+	Kod zadania:	JZLICZ
+	Link:			https://pl.spoj.com/problems/JZLICZ/
+*/
+
 #include <stdio.h>
 #include <string.h>
- 
+
 char letters_b[26] = { 65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90, };  // wielkie litery
 char letters_s[26] = { 97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122 };  // male litery
- 
+
 void zli(char* str, char* letters_cnt) {
- 
-	for (int i = 0; i < strlen(str);i++) {
+
+	for (int i = 0; i < strlen(str); i++) {
 		switch (str[i]) {
 		case 65: letters_cnt[0]++; break;
 		case 66: letters_cnt[1]++; break;
@@ -36,7 +39,7 @@ void zli(char* str, char* letters_cnt) {
 		case 88: letters_cnt[23]++; break;
 		case 89: letters_cnt[24]++; break;
 		case 90: letters_cnt[25]++; break;
- 
+
 		case 97: letters_cnt[26]++; break;
 		case 98: letters_cnt[27]++; break;
 		case 99: letters_cnt[28]++; break;
@@ -63,34 +66,34 @@ void zli(char* str, char* letters_cnt) {
 		case 120: letters_cnt[49]++; break;
 		case 121: letters_cnt[50]++; break;
 		case 122: letters_cnt[51]++; break;
-      
-    default: break;
+
+		default: break;
 		}
 	};
 }
- 
+
 int main() {
 	int N;
 	char str[200];
 	char letters_cnt[52] = { 0 };
- 
+
 	scanf("%d", &N);
- 
-	for (int i = 0;i <= N;i++) {
+
+	for (int i = 0; i <= N; i++) {
 		fgets(str, 200, stdin);
 		zli(str, letters_cnt);
 	}
- 
-	for (int i = 26;i < 52;i++) {
+
+	for (int i = 26; i < 52; i++) {
 		if (letters_cnt[i] > 0) {
-			printf("%c %d\n", letters_s[i-26], letters_cnt[i]);
+			printf("%c %d\n", letters_s[i - 26], letters_cnt[i]);
 		}
 	}
-	for (int i = 0;i < 26;i++) {
+	for (int i = 0; i < 26; i++) {
 		if (letters_cnt[i] > 0) {
 			printf("%c %d\n", letters_b[i], letters_cnt[i]);
 		}
 	}
-	
+
 	return 0;
-} 
+}

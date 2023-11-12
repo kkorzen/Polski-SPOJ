@@ -1,5 +1,7 @@
-// Dyrektywa dla poprawnego dzialania funkcji scanf() w Visual Studio
-#define _CRT_SECURE_NO_WARNINGS
+/*
+	Kod zadania:	STOS
+	Link:			https://pl.spoj.com/problems/STOS/
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
