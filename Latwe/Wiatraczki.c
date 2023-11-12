@@ -87,7 +87,7 @@ void FreeWindmill(char** windmill, int r) {
 
 int main() {
 
-    int r = 0;
+    unsigned int r = 0;
 
     while (1) {
         scanf("%d", &r);
