@@ -12,22 +12,33 @@ void CreateEmpyWindmill(char** windmill, int r) {
 }
 
 void GenerateRightTurnWindmill(char** windmill, int r) {
+    // generowanie wiatraczka polega na podzieleniu macierzy na 4 cwiartki
+    // a nastepnie zmiana odpowiednich elementow na kropki
+
+    // elementy gdzie (row == col) to elementy lezace na diagonali ( \ ) macierzy
+    // elementy gdzie (row == 2*r - 1 - col) to elementy lezace na drugiej diagonali ( / )
+    // macierzy
+
     for (int row = 0; row < 2 * r; row++) {
         for (int col = 0; col < 2 * r; col++) {
-            if (row != col && col != 2 * r - 1 - row) {
-                // first quarter
+            if (row != col && row != 2 * r - 1 - col) {
+                // pierwsza cwiartka
+                // wstawianie kropki we wszystkie elementy lezace ponizej diagonali ( \ )
                 if (row < r && col < r) {
                     if (row > col) windmill[row][col] = '.';
                 }
                 // second quarter
+                // wstawianie kropki we wszystkie elementy lezace powyzej drugiej diagonali ( / )
                 if (row < r && col >= r) {
                     if (row < 2 * r - 1 - col) windmill[row][col] = '.';
                 }
                 // third quarter
+                // wstawianie kropki we wszystkie elementy lezace ponizej drugiej diagonali ( / )
                 if (row >= r && col < r) {
                     if (row > 2 * r - 1 - col) windmill[row][col] = '.';
                 }
                 // forth quarter
+                // wstawianie kropki we wszystkie elementy lezace powyzej diagonali ( \ )
                 if (row >= r && col >= r) {
                     if (row < col) windmill[row][col] = '.';
                 }
@@ -98,6 +109,9 @@ int main() {
 
         char** windmill = (char**)malloc(size * sizeof(char*));
         for (int i = 0; i < size; i++) {
+            // dodana '1' do size zaklada potraktowanie tablicy windmill[i] jako stringa
+            // zatem potrzebne jest dodanie miejsca na znak '\0'
+            // niezwykle istotne w przypadku wykorzystania funkcji strrev()
             *(windmill + i) = (char*)malloc((size + 1) * sizeof(char));
         }
 
