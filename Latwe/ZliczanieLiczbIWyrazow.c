@@ -12,8 +12,8 @@ int main() {
     int numbers = 0, words = 0;
 
     char* str_ptr = NULL;
-    long long str_max_len = 0;
-    long long str_len = 0;
+    size_t str_max_len = 0;
+    size_t str_len = 0;
 
 
     while (1) {
