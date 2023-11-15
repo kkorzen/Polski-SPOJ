@@ -16,12 +16,12 @@ int main() {
     size_t str_len = 0;
 
 
-    while (1) {
-        str_len = getline(&str_ptr, &str_max_len, stdin);
-        if (str_len == -1) break;
+    while ((str_len = getline(&str_ptr, &str_max_len, stdin)) != -1) {
         for (int i = 0; i < str_len; i++) {
-            if (isalpha(str_ptr[i]) && (isspace(str_ptr[i + 1]) || str_ptr[i + 1] == '\0')) words++;
-            if (isdigit(str_ptr[i]) && (isspace(str_ptr[i + 1]) || str_ptr[i + 1] == '\0')) numbers++;
+            if (isspace(str_ptr[i + 1]) || str_ptr[i + 1] == '\0') {
+                if (isalpha(str_ptr[i])) words++;
+                if (isdigit(str_ptr[i])) numbers++;
+            }
         }
         printf("%d %d\n", numbers, words);
         numbers = words = 0;
