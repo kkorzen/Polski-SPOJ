@@ -29,7 +29,7 @@ float Get_Distance_From_Str(char* str){
     if(_int != NULL)
         _float = strtok(NULL, ".");
     
-    int i = (float)atoi(_int);
+    float i = (float)atoi(_int);
     float f = 0;
  
     if(_float != NULL)
