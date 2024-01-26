@@ -1,3 +1,9 @@
+/*
+ Kod zadania: AL_10_11
+ Link: https://pl.spoj.com/problems/AL_10_11/
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
