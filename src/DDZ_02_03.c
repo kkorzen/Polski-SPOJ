@@ -59,5 +59,5 @@ int find_last_elem(char *arr, char c)
         if (arr[i] == c)
             return i;
     }
-    return -1;
+    return INVALID_INDEX;
 }
