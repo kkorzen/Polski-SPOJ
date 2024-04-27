@@ -22,7 +22,6 @@ int main() {
   int *numbers;
   char *symbols;
   int multiply_symbols = 0;
-  int sum = 0;
 
   scanf("%d", &n);
 
