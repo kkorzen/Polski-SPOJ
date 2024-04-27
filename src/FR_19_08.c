@@ -12,11 +12,11 @@ void Shift_Left_Int(int arr[], int len, int start_idx) {
 }
 
 void Shift_Left_Char(char arr[], int start_idx) {
-  int temp = arr[start_idx];
   for (int i = start_idx + 1; i < strlen(arr); i++) {
     arr[i - 1] = arr[i];
   }
 }
+
 int main() {
   int n = 0;
   int *numbers;
@@ -51,7 +51,8 @@ int main() {
         n--;                    // "wirtualne" skrocenie obu tablic
         symbols[n - 1] = '\0';  // rzeczywiste skrocenie stringa symboli
         multiply_symbols--; 
-        i--;                    // cofniecie sie o jedna iteracje, aby zapewnic poprawne wykonywanie dwoch mnozen po sobie
+        i--;                    // cofniecie sie o jedna iteracje, aby zapewnic 
+                                // poprawne wykonywanie dwoch mnozen po sobie
       }
     }
   }
