@@ -27,8 +27,6 @@ int main() {
     static int n;
     static char day[6];
     static int training_days[7];
-    static int min_weeks;
-    static int max_weeks;
 
     scanf("%d", &n);
 
