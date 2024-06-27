@@ -43,5 +43,7 @@ int main() {
 
     printf("%d %d\n", cars_passed, passed_by_cars);
 
+    free(cars);
+
     return 0;
 }
