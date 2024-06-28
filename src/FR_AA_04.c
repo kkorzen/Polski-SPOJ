@@ -11,15 +11,12 @@ int main() {
 
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++) {
+    while (n--) {
         scanf("%d", &temp);
+        if (arr[temp + 50] == 0) unique_numbers++;
         arr[temp + 50]++;
     }
-
-    for (int i = 0; i < 101; i++) {
-        if (arr[i] > 0) unique_numbers++;
-    }
-
+    
     printf("%d\n", unique_numbers);
 
     return 0;
