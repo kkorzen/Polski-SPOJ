@@ -5,4 +5,4 @@ Rozwiązania zadań z polskiej części SPOJ, platformy programistycznej przezna
 ---
 ## English :uk:
 
-Solutions for problems found on SPOJ, programming platform created for solving problems related to DS&A (Data Structures and Algorithms).
+Solutions for problems found on a Polish  part of SPOJ, programming platform created for people solving problems related to DS&A (Data Structures and Algorithms).
