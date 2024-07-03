@@ -5,4 +5,4 @@ Rozwiązania zadań z polskiej części SPOJ, platformy programistycznej przezna
 ---
 ## English :uk:
 
-Solutions for problems found on a Polish  part of SPOJ, programming platform created for people solving problems related to DS&A (Data Structures and Algorithms). For convenience all source files are placed in the _src_ directory and their names corespond to the codes of a specific task. Moreover, inside the source files there is also problem's ID code and a URL which task is located under.
+Solutions for problems found on a Polish  part of SPOJ, programming platform created for people solving problems related to DS&A (Data Structures and Algorithms). For convenience all source files are placed in the _src_ directory and their names corespond to the codes of a specific task. Moreover, inside each source file there is also problem's ID code and a URL which task is located under.
