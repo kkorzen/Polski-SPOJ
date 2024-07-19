@@ -1,4 +1,4 @@
-// Kod: FZI_STEFAN
+// Kod: FZI_STEF
 // Link: https://pl.spoj.com/problems/FZI_STEF/
 
 #include <stdio.h>
