@@ -82,6 +82,7 @@ int main() {
         }
 
         puts("3");
+        free(line);
     }
 
     return 0;
